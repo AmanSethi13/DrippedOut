@@ -1,6 +1,6 @@
 {
   "name": "shoes",
-  "homepage": "https://ishaanwadhwa.github.io/DrippedOut",
+  "homepage": "http://drippedout.in/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,12 +22,12 @@
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
     "react-spring": "^9.0.0",
+    "react-ticker": "^1.2.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-
-     "predeploy": "npm run build",
-       "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

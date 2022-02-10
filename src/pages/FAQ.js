@@ -4,10 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import styles from "../styles/pages/faq.module.scss";
 import TopText from "../components/FAQ/TopFAQ";
 import questionImage from "../photos/question.png";
-import sprayCan from '../photos/sprayCan.png';
-import faq2 from '../photos/faq2.png';
-import faqhourglass from '../photos/hourglass.png'
-import box from '../photos/box.png';
+import sprayCan from "../photos/sprayCan.png";
+import faq2 from "../photos/faq2.png";
+import faqhourglass from "../photos/hourglass.png";
+import box from "../photos/box.png";
 const FAQ = (props) => {
   return (
     <div className={styles.faq}>
@@ -20,17 +20,15 @@ const FAQ = (props) => {
               Each order is personalized according to the wants of the client.
               Exchange/refund of these orders is not possible as the work cannot
               be undone.
-           
             </div>
             <div className={styles.questionText}>
               How can I clean the shoes?
             </div>
             <div className={styles.questionAnswer}>
               The best way to clean custom shoes is with clear water. Avoid
-              scratches and rubbing on painted parts. 
+              scratches and rubbing on painted parts.
               <br />
-              You may use a repellent
-              spray to protect the shoes.
+              You may use a repellent spray to protect the shoes.
             </div>
             <div className={styles.questionText}>
               How long until I get my customs?
@@ -54,22 +52,20 @@ const FAQ = (props) => {
               Google Pay & Paytm.
             </div>
           </Col>
-          <Col md='4'>
+          <Col md="4">
             <div className={styles.animationWrapper}>
-            <img src={faqhourglass} alt=""  className={styles.faq1}/>
-          
+              <img src={faqhourglass} alt="" className={styles.faq1} />
             </div>
             <div className={styles.animationWrapper2}>
-            <img src={sprayCan} alt=""  className={styles.sprayCan}/>
-          
+              <img src={sprayCan} alt="" className={styles.sprayCan} />
             </div>
             <div className={styles.animationWrapper3}>
-            <img src={faq2} alt=""  className={styles.faq2}/>
+              <img src={faq2} alt="" className={styles.faq2} />
             </div>
-            <div className={styles.animationWrapper4}>
+            {/* <div className={styles.animationWrapper4}>
             <img src={box} alt=""  className={styles.sprayCan}/>
           
-            </div>
+            </div> */}
           </Col>
         </Row>
       </Container>

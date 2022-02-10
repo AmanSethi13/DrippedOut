@@ -59,9 +59,9 @@ const ImageCarousel = () => {
   console.log(SliderData);
   return (
     <Aux>
-      {photoClicked && (
+      {/* {photoClicked && (
         <Modal image={photoSrc} show={photoClicked} hide={imageHideHandler} />
-      )}
+      )} */}
       <Carousel
         ssr
         // partialVisbile
@@ -77,19 +77,27 @@ const ImageCarousel = () => {
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={3000}
+        style={{ height: "auto", minHeight: "100vh" }}
         // ssr={true} // means to render carousel on server-side.
         // // itemClass="carousel-item-padding-40-px"
       >
         {SliderData.map((image, index) => {
           return (
             <div key={index}>
-              <img
-                onClick={() => photoClickedHandler(image.image)}
-                style={{ width: "80%", height: 'auto', margin: "auto" }}
-                src={image.image}
-                class="img-fluid mx-auto d-block"
-                alt="img2"
-              />
+              <a href={image.image} target="_blank">
+                <img
+                  // onClick={() => photoClickedHandler(image.image)}
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                    margin: "auto",
+                    maxHeight: 500,
+                  }}
+                  src={image.image}
+                  class="img-fluid mx-auto d-block"
+                  alt="img2"
+                />
+              </a>
             </div>
           );
         })}

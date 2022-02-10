@@ -5,7 +5,7 @@
   font-family: "Druk Wide Bold", sans-serif;
   font-size: 70px;
   font-weight: 550;
-  color: #66FF66  ;
+  color: #66ff66;
   // text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #66FF66
   // , 0 0 1px #66FF66
   // , 0 0 1px #66FF66
@@ -18,45 +18,59 @@
 }
 
 .questionText {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-bottom: 8px;
-  line-height: 30px;
-  font-size: 30px;
+  line-height: 27px;
+  font-size: 27px;
   font-weight: 500;
   color: black;
   text-align: left;
 }
 
 .questionAnswer {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: left;
-  line-height: 28px;
-  font-size: 20px;
+  line-height: 25px;
+  font-size: 17px;
   font-weight: 400;
   color: black;
   margin-bottom: 25px;
 }
 @keyframes spraycan {
-  50%  {transform: rotate(25deg);}
+  50% {
+    transform: rotate(25deg);
+  }
 }
 @keyframes spraycan2 {
-  0% {left:0px; top:0px}
-  50% {left : 2px; top : 20px;}
-  100% {left:7px; top:0px}
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    left: 2px;
+    top: 20px;
+  }
+  100% {
+    left: 7px;
+    top: 0px;
+  }
 }
 @keyframes faq3 {
-  0% {transform: rotate(0deg);}
-  50% {transform: rotate(-20deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
 }
 
-.animationWrapper{
+.animationWrapper {
   text-align: right;
   animation-name: faq3;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   width: fit-content;
-
 }
 .animationWrapper2 {
   animation-name: spraycan;
@@ -74,7 +88,7 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   text-align: left;
-// transform: rotate(-25deg);
+  // transform: rotate(-25deg);
 }
 .animationWrapper4 {
   position: relative;
@@ -84,7 +98,7 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   text-align: right;
-// transform: rotate(-25deg);
+  // transform: rotate(-25deg);
 }
 .faq1 {
   height: 150px;
@@ -94,15 +108,13 @@
   height: 280px;
 }
 
-.sprayCan{
-
+.sprayCan {
   transform: rotate(0deg);
 
-  height: 180px;
+  height: 250px;
 }
 
-@media only screen and (max-width: 768px)
-{
+@media only screen and (max-width: 768px) {
   .questionText {
     line-height: 30px;
     font-size: 15px;
@@ -110,7 +122,7 @@
     color: black;
     text-align: left;
   }
-  
+
   .questionAnswer {
     text-align: left;
     line-height: 15px;

@@ -5,7 +5,7 @@ import styles from "../../styles/components/Home/HomeTop.module.scss";
 import yeezy from "../../photos/yeezy.png";
 import { Zoom, Fade } from "react-reveal";
 import { useSpring, animated, Transition } from "react-spring";
-import animated_logo from '../../videos/preplay.mp4';
+import animated_logo from "../../videos/preplay.mp4";
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
   (x - window.innerWidth / 2) / 20,
@@ -53,22 +53,24 @@ const HomeTop = (props) => {
                       "new without buying new".
                     </div>
                   </Col>
-                 
                 </Row>
               </div>
             </Fade>
           </Col>
           <Col md="6">
-              <div className={styles.ImageWrapper}>
-                <video className={styles.HomeImage}
+            <div className={styles.ImageWrapper}>
+              <video
+                className={styles.HomeImage}
                 height="350px"
-                 autoPlay
-                 muted>
-                  <source src={animated_logo} type="video/mp4" />
-                </video>
-                {/* <img className={styles.HomeImage} src={yeezy} alt="yeezy" /> */}
+                autoPlay
+                loop
+                muted
+              >
+                <source src={animated_logo} type="video/mp4" />
+              </video>
+              {/* <img className={styles.HomeImage} src={yeezy} alt="yeezy" /> */}
 
-                {/* <animated.div
+              {/* <animated.div
                     class={styles.card}
                     onMouseMove={({ clientX: x, clientY: y }) =>
                       spring.set({ xys: calc(x, y) })
@@ -77,7 +79,7 @@ const HomeTop = (props) => {
                     style={{ transform: propsNew.xys.interpolate(trans) }}
                   /> */}
 
-                {/* <animated.div
+              {/* <animated.div
                     class={styles.card2}
                     style={{ transform: propsNew.xy.interpolate(trans4) }}
                   />
@@ -86,7 +88,7 @@ const HomeTop = (props) => {
                     style={{ transform: propsNew.xy.interpolate(trans2) }}
                   /> */}
 
-                {/* <animated.div
+              {/* <animated.div
                     class="card3"
                     style={{ transform: props.xy.interpolate(trans3) }}
                   />
@@ -94,7 +96,7 @@ const HomeTop = (props) => {
                     class="card4"
                     style={{ transform: props.xy.interpolate(trans4) }}
                   /> */}
-              </div>
+            </div>
           </Col>
         </Row>
       </Container>
